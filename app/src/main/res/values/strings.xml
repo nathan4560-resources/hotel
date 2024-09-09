@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hotel</string>
+    <string-array name="guest_count_array">
+        <item>1 Guest</item>
+        <item>2 Guests</item>
+        <item>3 Guests</item>
+        <item>4 Guests</item>
+        <item>5 Guests</item>
+    </string-array>
+</resources>

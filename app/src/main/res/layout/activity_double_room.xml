@@ -1,0 +1,181 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Room Image -->
+        <ImageView
+            android:id="@+id/room_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doubleroom" />
+
+        <!-- Room Title -->
+        <TextView
+            android:id="@+id/room_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room_image"
+            android:layout_marginTop="16dp"
+            android:text="Double Room"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Room Description -->
+        <TextView
+            android:id="@+id/room_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room_title"
+            android:layout_marginTop="8dp"
+            android:text="The Double Room is perfect for couples or two travelers, featuring a spacious setting with a comfortable double bed or two twin beds.
+The room is equipped with modern amenities, including a private bathroom, flat-screen TV, free Wi-Fi, and a work desk.
+Enjoy a cozy and relaxing stay with ample space for two. Price per night: RM120"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Check-in Date Selection -->
+        <TextView
+            android:id="@+id/check_in_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room_description"
+            android:layout_marginTop="16dp"
+            android:text="Check-in Date"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/check_in_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_in_label"
+            android:layout_marginTop="8dp"
+            android:hint="Select Check-in Date"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="date" />
+
+        <!-- Check-out Date Selection -->
+        <TextView
+            android:id="@+id/check_out_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_in_date"
+            android:layout_marginTop="16dp"
+            android:text="Check-out Date"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/check_out_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_out_label"
+            android:layout_marginTop="8dp"
+            android:hint="Select Check-out Date"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="date" />
+
+        <!-- Guest Count Selection -->
+        <TextView
+            android:id="@+id/guest_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_out_date"
+            android:layout_marginTop="16dp"
+            android:text="Number of Guests"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/guest_count_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guest_count_label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter number of guests"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="number" />
+
+        <!-- Email TextView -->
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guest_count_input"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter your email"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password TextView -->
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_input"
+            android:layout_marginTop="16dp"
+            android:text="Password"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter your password"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPassword" />
+
+        <!-- Book Now Button -->
+        <Button
+            android:id="@+id/book_now_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_input"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Book Now"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

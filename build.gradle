@@ -1,0 +1,24 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2' // Google Services plugin version
+    }
+}
+
+
+
+plugins {
+    id 'com.android.application' version '8.2.2' apply false
+    id 'com.android.library' version '8.2.2' apply false
+    id 'com.google.gms.google-services' version '4.4.2' apply false
+}
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.0.0') // Use the latest BOM
+    //implementation platform('com.google.firebase:firebase-bom:33.2.0')
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-messaging'
+}
+apply plugin: 'com.google.gms.google-services'
+
